@@ -10,6 +10,7 @@ import datetime
 
 path = r"C:\Users\HomePC\Documents\HTMLcSS\Plane\Data\planes.csv"
 
+
 df = pd.read_csv(path)
 
 threshod = 0.05 * len(df)
@@ -119,6 +120,7 @@ from dash import dcc, html
 
 # Initialize the Dash app
 app = dash.Dash(__name__, meta_tags=[{"name": "viewport", "content": "width=device-width"}])
+server = app.server
 
 
 # Define the layout of the app
@@ -560,3 +562,4 @@ def update_graphs(selected_airline, selected_stop, start_date, end_date):
 # Run the server
 if __name__ == '__main__':
     app.run_server(debug=True)
+    
