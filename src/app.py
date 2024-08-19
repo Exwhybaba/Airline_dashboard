@@ -122,7 +122,6 @@ from dash import dcc, html
 # Initialize the Dash app
 app = dash.Dash(__name__,meta_tags=[{"name": "viewport", "content": "width=device-width"}])
 server = app.server
-# Set the custom index string
 app.index_string = '''
 <!DOCTYPE html>
 <html>
@@ -137,6 +136,7 @@ app.index_string = '''
           gtag('js', new Date());
           gtag('config', 'G-28PGC2X4Y3');
         </script>
+        {%css%}
     </head>
     <body>
         <div id="react-entry-point">
@@ -150,6 +150,7 @@ app.index_string = '''
     </body>
 </html>
 '''
+
 
 # Define the layout of the app
 app.layout = html.Div(children=[
