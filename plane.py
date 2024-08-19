@@ -8,8 +8,8 @@ from dash.dependencies import Input, Output, State
 from dash import dcc, html
 import datetime
 
-#path = r"C:\Users\HomePC\Documents\HTMLcSS\Plane\Data\planes.csv"
-path = "https://raw.githubusercontent.com/Exwhybaba/Airline_dashboard/main/Data/planes.csv"
+path = r"C:\Users\HomePC\Documents\HTMLcSS\Plane\Data\planes.csv"
+
 
 df = pd.read_csv(path)
 
