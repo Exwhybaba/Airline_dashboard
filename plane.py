@@ -403,6 +403,7 @@ app.layout = html.Div(children=[
                                                       "position": "relative", 
                                                       "top": "40px",
                                                       "left" : "60px",
+                                                      "border-bottom": "solid 2px black",
                                                       "margin-left": "150px"
                                                       })),
                     dcc.Graph(id="day_price", figure=day_fig, style={"height": "90%", 
