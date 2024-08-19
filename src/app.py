@@ -120,7 +120,11 @@ import dash
 from dash import dcc, html
 
 # Initialize the Dash app
+<<<<<<< HEAD
 app = dash.Dash(__name__, index_string=open('index_string.html').read(),meta_tags=[{"name": "viewport", "content": "width=device-width"}])
+=======
+app = dash.Dash(__name__, meta_tags=[{"name": "viewport", "content": "width=device-width"}])
+>>>>>>> a697c4d7a10fd6b31bfd2b0ad52b2072fdb8197c
 server = app.server
 
 
